@@ -23,10 +23,10 @@ void pullRect(KDRect r, KDColor * pixels);
 
 bool waitForVBlank();
 
-constexpr int Width = 320;
-constexpr int Height = 240;
-constexpr int WidthInTenthOfMillimeter = 576;
-constexpr int HeightInTenthOfMillimeter = 432;
+constexpr int Width = 240;
+constexpr int Height = 135;
+constexpr int WidthInTenthOfMillimeter = 53;
+constexpr int HeightInTenthOfMillimeter = 25;
 
 // For Power On Self tests
 int displayUniformTilingSize10(KDColor c);
