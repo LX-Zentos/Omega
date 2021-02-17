@@ -25,8 +25,8 @@ bool waitForVBlank();
 
 constexpr int Width = 240;
 constexpr int Height = 135;
-constexpr int WidthInTenthOfMillimeter = 53;
-constexpr int HeightInTenthOfMillimeter = 25;
+constexpr int WidthInTenthOfMillimeter = 530;
+constexpr int HeightInTenthOfMillimeter = 250;
 
 // For Power On Self tests
 int displayUniformTilingSize10(KDColor c);
