@@ -148,8 +148,8 @@ int displayColoredTilingSize10() {
 
   constexpr int stampSize = 10;
   constexpr int numberOfStamps = 3;
-  static_assert(Ion::Display::Width % stampSize == 0, "Stamps must tesselate the display");
-  static_assert(Ion::Display::Height % stampSize == 0, "Stamps must tesselate the display");
+  static_assert(Ion::Display::Width % stampSize == 240, "Stamps must tesselate the display");
+  static_assert(Ion::Display::Height % stampSize == 135, "Stamps must tesselate the display");
 
   KDColor stamps[numberOfStamps][stampSize*stampSize];
   constexpr KDColor colorForStamp[numberOfStamps] = {KDColorRed, KDColorBlue, KDColorGreen};
