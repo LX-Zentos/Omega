@@ -98,10 +98,10 @@ void POSTPushMulticolor(int rootNumberTiles, int tileSize) {
 }
 
 int displayUniformTilingSize10(KDColor c) {
-  constexpr int stampHeight = 10;
-  constexpr int stampWidth = 10;
-  static_assert(Ion::Display::Width % stampWidth == 240, "Stamps must tesselate the display");
-  static_assert(Ion::Display::Height % stampHeight == 135, "Stamps must tesselate the display");
+  constexpr int stampHeight = 15;
+  constexpr int stampWidth = 15;
+  static_assert(Ion::Display::Width % stampWidth == 15, "Stamps must tesselate the display");
+  static_assert(Ion::Display::Height % stampHeight == 15, "Stamps must tesselate the display");
 
   {
     KDColor stamp[stampWidth*stampHeight];
@@ -146,10 +146,10 @@ int displayColoredTilingSize10() {
    * On third pass, green / red / green / red...
    * And so on. */
 
-  constexpr int stampSize = 10;
+  constexpr int stampSize = 15;
   constexpr int numberOfStamps = 3;
-  static_assert(Ion::Display::Width % stampSize == 240, "Stamps must tesselate the display");
-  static_assert(Ion::Display::Height % stampSize == 135, "Stamps must tesselate the display");
+  static_assert(Ion::Display::Width % stampSize == 15, "Stamps must tesselate the display");
+  static_assert(Ion::Display::Height % stampSize == 15, "Stamps must tesselate the display");
 
   KDColor stamps[numberOfStamps][stampSize*stampSize];
   constexpr KDColor colorForStamp[numberOfStamps] = {KDColorRed, KDColorBlue, KDColorGreen};
